@@ -1,6 +1,8 @@
 package utils
 
-import "github.com/jaswdr/faker"
+import (
+	"github.com/jaswdr/faker"
+)
 
 func PromptGenerator(s string) []string {
 	result := make([]string, 0)

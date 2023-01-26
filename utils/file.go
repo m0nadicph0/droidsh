@@ -12,3 +12,39 @@ func ListFiles(path string) func(string) []string {
 		return names
 	}
 }
+
+func AndroidCommands(s string) []string {
+	return []string{
+		"ping",
+		"automation",
+		"event",
+		"geo",
+		"gsm",
+		"cdma",
+		"crash",
+		"crash-on-exit",
+		"kill",
+		"restart",
+		"network",
+		"grpc",
+		"power",
+		"quit|exit",
+		"redir",
+		"sms",
+		"avd",
+		"qemu",
+		"sensor",
+		"physics",
+		"finger",
+		"debug",
+		"rotate",
+		"screenrecord",
+		"fold",
+		"unfold",
+		"posture",
+		"multidisplay",
+		"icebox",
+		"nodraw",
+		"resize-display",
+	}
+}
