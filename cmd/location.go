@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"droidsh/constants"
 	"droidsh/utils"
 	"fmt"
 	"github.com/chzyer/readline"
@@ -27,6 +28,6 @@ func Location(conn net.Conn, rl *readline.Instance, args []string) {
 	fmt.Println("Longitude:", location.Longitude)
 	fmt.Println("Country:", location.Country)
 	fmt.Println("State:", location.State)
-	fmt.Println("URL:", fmt.Sprintf("https://www.google.com/maps/@%f,%f,17z", location.Latitude, location.Longitude))
+	fmt.Println("URL:", fmt.Sprintf("%s/@%f,%f,17z", constants.MAPS_URI, location.Latitude, location.Longitude))
 
 }
